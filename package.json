@@ -1,6 +1,6 @@
 {
   "name": "wheelhouse-handlebars",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A wheelhouse library to handlebars templates for rendering views",
   "main": "index.js",
   "scripts": {
@@ -37,8 +37,8 @@
     "grunt-simple-mocha": "~0.3",
     "union": "~0.3",
     "grunt-shell": "~0.2"
-  }
-  , "peerDependencies": {
+  },
+  "peerDependencies": {
     "flatiron": "~0.3"
   }
 }
