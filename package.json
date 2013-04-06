@@ -4,7 +4,7 @@
   "description": "A wheelhouse library to handlebars templates for rendering views",
   "main": "index.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "mocha test/specs"
   },
   "repository": {
     "type": "git",
