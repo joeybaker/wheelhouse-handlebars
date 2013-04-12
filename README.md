@@ -46,7 +46,7 @@ which you should include in your layout.
 
 You can look in `test/fixtures/templates/layout.hbs` for an example of a layout file.
 
-#### {{_yield_}}
+#### {{_yield}}
 This is the spot in your layout where the templates will be rendered. Same as say… Rails.
 
 ### {{_development}}
@@ -75,8 +75,9 @@ app.parseTemplates(function(){
 ## tests
 
 ### The grunt way
-You must have [grunt-cli](https://github.com/gruntjs/grunt-cli) installed: `sudo npm i -g grunt-cli`
-`npm test`
+You must have [grunt-cli](https://github.com/gruntjs/grunt-cli) installed:
+* `sudo npm i -g grunt-cli`
+* `npm test`
 
 ### The Mocha way
 `mocha test/specs -ui bdd`
