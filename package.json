@@ -1,6 +1,6 @@
 {
   "name": "wheelhouse-handlebars",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "A wheelhouse library to handlebars templates for rendering views",
   "main": "index.js",
   "scripts": {
