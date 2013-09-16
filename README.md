@@ -1,6 +1,8 @@
 wheelhouse-handlebars
 =======================
 
+[![NPM](https://nodei.co/npm/wheelhouse-handlebars.png)](https://nodei.co/npm/wheelhouse-handlebars/)
+
 A wheelhouse package for rendering handlebars templates with [flatiron](https://github.com/flatiron/flatiron).
 
 ## Usage
