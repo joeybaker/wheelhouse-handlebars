@@ -13,12 +13,12 @@
   , "undef": true
   , "unused": true
   , "strict": true
+  , "globalstrict": true
   , "trailing": true
 
   , "asi"       : true
   , "boss"      : false
   , "eqnull"    : true
-  , "es5"       : true
   , "expr"      : true
   , "laxbreak"  : true
   , "laxcomma"  : true
@@ -27,7 +27,4 @@
 
   , "node": true
   , "browser": true
-  , "predef": [
-    "A"
-  ]
 }
