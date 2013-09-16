@@ -21,7 +21,7 @@
   "author": "Joey Baker",
   "license": "BSD",
   "dependencies": {
-    "lodash": "~1.1",
+    "lodash": "~2.0",
     "backbone": "~1.0",
     "findit": "~1.1",
     "handlebars": "~1.0"
@@ -32,11 +32,11 @@
     "grunt-bumpx": "~0.1",
     "grunt-notify": "~0.2",
     "grunt-contrib-jshint": "~0.4",
-    "chai": "~1.5",
-    "mocha": "~1.9",
-    "grunt-simple-mocha": "~0.3",
+    "chai": "~1.7",
+    "mocha": "~1.13",
+    "grunt-simple-mocha": "~0.4",
     "union": "~0.3",
-    "grunt-shell": "~0.2"
+    "grunt-shell": "~0.3"
   },
   "peerDependencies": {
     "flatiron": "~0.3"
