@@ -1,6 +1,6 @@
 {
   "name": "wheelhouse-handlebars",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A wheelhouse library to handlebars templates for rendering views",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "keywords": [
     "flatiron",
-    "backbone",
+    "templates",
     "connect",
     "views",
     "handlebars",
@@ -21,19 +21,18 @@
   "author": "Joey Baker",
   "license": "BSD",
   "dependencies": {
-    "lodash": "~2.0",
-    "backbone": "~1.0",
+    "lodash": "~2.3",
     "findit": "~1.1",
-    "handlebars": "~1.0"
+    "handlebars": "~1.1"
   },
   "devDependencies": {
-    "flatiron": "~0.3",
+    "flatiron": "~0.3.8",
     "grunt": "~0.4",
     "grunt-bumpx": "~0.1",
-    "grunt-notify": "~0.2",
-    "grunt-contrib-jshint": "~0.6",
-    "chai": "~1.7",
-    "mocha": "~1.13",
+    "grunt-notify": "~0.2.16",
+    "grunt-contrib-jshint": "~0.7",
+    "chai": "~1.8",
+    "mocha": "~1.14",
     "grunt-simple-mocha": "~0.4",
     "union": "~0.3",
     "grunt-shell": "~0.3"
