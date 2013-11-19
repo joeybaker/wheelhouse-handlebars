@@ -2,7 +2,7 @@
 
 var Handlebars = require('handlebars')
 
-Handlebars.registerHelper('aliens', function(context) {
+function alienHelper(context) {
   var out = ''
   context.forEach(function(alien){
     out += ' '
@@ -10,6 +10,10 @@ Handlebars.registerHelper('aliens', function(context) {
     out += ' is invading!!'
   })
   return out
-})
+}
 
-module.exports = Handlebars
+module.exports = function(handlebars){
+  handlebars || (handlebars = Handlebars)
+
+  Handlebars.registerHelper('aliens', alienHelper)
+}

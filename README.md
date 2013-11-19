@@ -74,6 +74,24 @@ app.parseTemplates(function(){
 })
 ```
 
+### Creating a new helper
+```js
+
+var Handlebars = require('handlebars')
+// define your helper function
+function helper(context) {
+  return 'hello! ' + context.msg
+}
+
+// export a function that accepts a handlebars instance
+module.exports = function(handlebars){
+  // if we haven't been given a handlebars instance, use the one we required. This will work fine browser-side, but not in node, you must pass the handlebars instance you want to attach to (this plugin does that for you.)
+  handlebars || (handlebars = Handlebars)
+  return handlebars.registerHelper('hello', helper)
+}
+
+```
+
 ## tests
 
 ### The grunt way
@@ -83,3 +101,7 @@ You must have [grunt-cli](https://github.com/gruntjs/grunt-cli) installed:
 
 ### The Mocha way
 `mocha test/specs -ui bdd`
+
+## Changelog
+### 0.3.2
+* **Breaking change**: helpers must now return a function that accepts a single argument: the `Handlebars` instances you want to attach the helper to. If you don't pass a handlebars instance, it will require handlebars and use that instance (works great client side)

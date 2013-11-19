@@ -1,6 +1,6 @@
 {
   "name": "wheelhouse-handlebars",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "A wheelhouse library to handlebars templates for rendering views",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   "dependencies": {
     "lodash": "~2.3",
     "findit": "~1.1",
-    "handlebars": "~1.1"
+    "handlebars": "~1.1.2"
   },
   "devDependencies": {
     "flatiron": "~0.3.8",
