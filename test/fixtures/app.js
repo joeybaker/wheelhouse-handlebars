@@ -10,6 +10,5 @@ require('chai').should()
 
 app.use(flatiron.plugins.http, {})
 app._base = _base
-app.start()
 
 module.exports = app

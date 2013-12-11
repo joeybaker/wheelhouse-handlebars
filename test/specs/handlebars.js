@@ -4,13 +4,14 @@ var app = require('../fixtures/app')
   , path = require('path')
   , handlebarsPlugin = require(path.join(app._base, 'lib/handlebars.js'))
 
-
 describe('HandlebarsPlugin', function(){
-  before(function(){
+  before(function(done){
+    app.options.log = {console: {silent: true}}
     app.use(handlebarsPlugin, {
       templates: path.join(app._base, 'test/fixtures/templates')
       , helpers: path.join(app._base, 'test/fixtures/helpers')
     })
+    app.start(null, done)
   })
 
   it('attaches to a flatiron app', function(){
