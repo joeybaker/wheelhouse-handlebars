@@ -105,6 +105,7 @@ You must have [grunt-cli](https://github.com/gruntjs/grunt-cli) installed:
 ## Changelog
 ### 0.3.3
 * If the requested template isn't cached, throw an error
+* Updated lodash and misc dev dependencies
 
 ### 0.3.2
 * **Breaking change**: helpers must now return a function that accepts a single argument: the `Handlebars` instances you want to attach the helper to. If you don't pass a handlebars instance, it will require handlebars and use that instance (works great client side)
