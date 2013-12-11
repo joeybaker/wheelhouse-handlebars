@@ -51,7 +51,10 @@ describe('HandlebarsPlugin', function(){
       var metaString = 'google sees me'
       app.render(null, null, {meta: {description: metaString}}).indexOf(metaString).should.not.equal(-1)
     })
-  })
 
+    it('throws an error if the template is missing', function(){
+        app.render.bind(null, 'templateThatIsMissing', null, null).should.throw(Error)
+    })
+  })
 })
 
