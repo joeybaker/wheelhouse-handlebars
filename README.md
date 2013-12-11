@@ -103,7 +103,10 @@ You must have [grunt-cli](https://github.com/gruntjs/grunt-cli) installed:
 `mocha test/specs -ui bdd`
 
 ## Changelog
-### 0.3.3
+### 0.3.5
+* typo in last release notes
+
+### 0.3.4
 * If the requested template isn't cached, throw an error
 * Updated lodash and misc dev dependencies
 
